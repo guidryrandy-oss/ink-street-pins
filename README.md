@@ -4,7 +4,9 @@ Pinterest pin images and bulk-upload files for the
 [Ink Street](https://www.etsy.com/shop/InkStreetInc) Etsy shop. Pinterest's bulk upload fetches each
 pin's image from a public address, so they live here.
 
-- `pins/`: one tall 1000 x 1500 image per pin, made from the listing's own photos
+- `pins/`: one tall 1000 x 1500 image per pin, made from the listing's own photos. The upload files use
+  each image's hashed name (`FEAST1-a-e32e1ee9.jpg`): Pinterest reuses the picture it first fetched from
+  an address, so a redrawn pin needs a new one
 - `bulk/`: two weeks of pins per file, for pinterest.com → Settings → Bulk create Pins → Upload .csv,
   each uploaded the day before its first pin
 - `profile/`: the Pinterest profile photo (light and dark) and the profile cover
